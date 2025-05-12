@@ -1,12 +1,17 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Up and running
+- Clone the repository on your local machine.
+- Go to the project directory.
+- `npm install` to get the needed packages.
+- `npm run dev` to launch the app.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Gitflow
+1. Create a feature branch based on the related task.
+2. Pull the latest version from the origin remote.
+3. Make, add, and commit your changes.
+4. Pull the latest version from the origin remote to ensure it's synchronized.
+5. Push your feature branch.
+6. Create a pull request.
+7. Verify that the pull request is conflict-free.
+8. Merge the pull request.
