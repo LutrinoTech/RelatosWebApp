@@ -15,33 +15,3 @@
 6. Create a pull request.
 7. Verify that the pull request is conflict-free.
 8. Merge the pull request.
-
-## Project structure
-public/
-  ..... index.html
-src/
-  ..... App.js
-  ..... index.js
-  assets/
-    ..... images/
-  components/
-    ..... Card.js
-    ..... Button.js
-  hooks/
-    ..... customHook.js
-  pages/
-    ..... HomePage.js
-    ..... DetailPage.js
-  routes/
-    ..... index.js
-  services/
-    ..... api.js
-  styles/
-    ..... global.css
-  utils/
-    ..... helpers.js
-.env
-.gitignore
-package.json
-README.md
-...
