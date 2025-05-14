@@ -1,10 +1,11 @@
+import MainLayout from "./layouts/MainLayout";
+import HomePage from "./pages/HomePage";
+
 function App() {
   return (
-    <>
-      <div className="text-3xl font-bold text-center underline flex items-center justify-center h-screen">
-        Relatos App
-      </div>
-    </>
+    <MainLayout>
+      <HomePage />
+    </MainLayout>
   );
 }
 
