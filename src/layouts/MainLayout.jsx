@@ -1,32 +1,34 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 const MainLayout = ({ children }) => {
   return (
     <>
-      <header className="flex justify-between py-5 px-4">
-        <div>Book store</div>
-        <div>Placeholder Text </div>
-        <div className="flex gap-4">
-          <FontAwesomeIcon
-            icon={faUser}
-            color="gray"
-            className="text-xl cursor-pointer"
-          />
-          <FontAwesomeIcon
-            icon={faShoppingCart}
-            color="gray"
-            className="text-xl cursor-pointer"
-          />
-        </div>
+      <header>
+        <Container fluid className="header-contaier">
+          <Row className="header-contaier_row">
+            <Col className="header-contaier_column" xs={12} md={9}>
+              <p>Book Shop from layout!</p>
+            </Col>
+
+            <Col className="header-contaier_column" xs={12} md={3}>
+              <p>Cart from layout!</p>
+            </Col>
+          </Row>
+        </Container>
       </header>
 
       <main>{children}</main>
 
       <footer>
-        <div className="bg-[url('../assets/footer-bg.png')] bg-cover bg-center py-5">
-          <p>Footer</p>
-        </div>
+        <Container fluid className="header-contaier">
+          <Row className="header-contaier_row">
+            <Col className="header-contaier_column" xs={12} md={9}>
+              <p>Footer from layout!</p>
+            </Col>
+          </Row>
+        </Container>
       </footer>
     </>
   );
