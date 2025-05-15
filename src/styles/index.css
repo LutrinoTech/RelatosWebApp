@@ -1,6 +1,30 @@
-@import "tailwindcss";
+.header-container_column {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
 
-@theme {
-    --color-main-gray: #f3f3f7;
-    --color-main-orange: #fa9a41;
+.hero {
+    align-items: center;
+    background-color: #f3f3f7;
+    display: flex;
+    height: 50rem;
+    justify-content: center;
+}
+
+.books {
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+.books_item {
+    margin-top: 2rem;
+}
+
+.books_item_btn--orange {
+    background-color: #fa9a41;
+    border: none;
+}
+
+.books_item_img {
+    height: 25rem;
 }
