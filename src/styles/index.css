@@ -3,6 +3,12 @@
     padding-top: 1rem;
 }
 
+.header-container_icons {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-around;
+}
+
 .footer-container {
     background-color: #fa9a41;
     color: #fff;
@@ -44,4 +50,25 @@
 
 .books_item_img {
     height: 25rem;
+}
+
+.card-metada-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card-metadata {
+    display: flex;
+    gap: 5px;
+}
+
+.card_actions {
+    display: flex;
+    gap: 2rem;
+}
+
+.card_actions > button {
+    width: 50%;
 }
