@@ -6,14 +6,14 @@ const MainLayout = ({ children }) => {
   return (
     <>
       <header>
-        <Container fluid className="header-contaier">
-          <Row className="header-contaier_row">
-            <Col className="header-contaier_column" xs={12} md={9}>
-              <p>Book Shop from layout!</p>
+        <Container fluid className="header-container">
+          <Row className="header-container_row">
+            <Col className="header-container_column" xs={12} md={9}>
+              <h6>Relatos de papel</h6>
             </Col>
 
-            <Col className="header-contaier_column" xs={12} md={3}>
-              <p>Cart from layout!</p>
+            <Col className="header-container_column" xs={12} md={3}>
+              <p>Cart</p>
             </Col>
           </Row>
         </Container>
@@ -22,10 +22,11 @@ const MainLayout = ({ children }) => {
       <main>{children}</main>
 
       <footer>
-        <Container fluid className="header-contaier">
-          <Row className="header-contaier_row">
-            <Col className="header-contaier_column" xs={12} md={9}>
-              <p>Footer from layout!</p>
+        <Container fluid className="footer-container">
+          <Row className="header-container_row">
+            <Col className="header-container_column" xs={12}>
+              <h6>Relatos de papel</h6>
+              <p>@Todos los derechos reservados</p>
             </Col>
           </Row>
         </Container>

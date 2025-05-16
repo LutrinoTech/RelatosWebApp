@@ -1,14 +1,30 @@
-.header-container_column {
+.header-container_row {
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
 
+.footer-container {
+    background-color: #fa9a41;
+    color: #fff;
+    text-align: center;
+}
+
 .hero {
-    align-items: center;
     background-color: #f3f3f7;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.hero_row {
+    align-items: center;
     display: flex;
-    height: 50rem;
-    justify-content: center;
+}
+
+.hero_column_img {
+    border-radius: 0.5rem;
+    height: 40rem;
+    margin-top: 5px;
+    width: 40rem;
 }
 
 .books {
@@ -20,7 +36,8 @@
     margin-top: 2rem;
 }
 
-.books_item_btn--orange {
+.books_item_btn--orange,
+.hero_colum_btn--orange {
     background-color: #fa9a41;
     border: none;
 }
