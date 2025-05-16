@@ -1,19 +1,24 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 
 const MainLayout = ({ children }) => {
   return (
     <>
       <header>
-        <Container fluid className="header-contaier">
-          <Row className="header-contaier_row">
-            <Col className="header-contaier_column" xs={12} md={9}>
-              <p>Book Shop from layout!</p>
+        <Container fluid className="header-container">
+          <Row className="header-container_row">
+            <Col className="header-container_column" xs={10} md={11}>
+              <h6>Relatos de papel</h6>
             </Col>
 
-            <Col className="header-contaier_column" xs={12} md={3}>
-              <p>Cart from layout!</p>
+            <Col className="header-container_column" xs={2} md={1}>
+              <div className="header-container_icons">
+                <FontAwesomeIcon icon={faCartShopping} size="lg" color="gray" />
+                <FontAwesomeIcon icon={faUser} size="lg" color="gray" />
+              </div>
             </Col>
           </Row>
         </Container>
@@ -22,10 +27,11 @@ const MainLayout = ({ children }) => {
       <main>{children}</main>
 
       <footer>
-        <Container fluid className="header-contaier">
-          <Row className="header-contaier_row">
-            <Col className="header-contaier_column" xs={12} md={9}>
-              <p>Footer from layout!</p>
+        <Container fluid className="footer-container">
+          <Row className="header-container_row">
+            <Col className="header-container_column" xs={12}>
+              <h6>Relatos de papel</h6>
+              <p>@Todos los derechos reservados</p>
             </Col>
           </Row>
         </Container>

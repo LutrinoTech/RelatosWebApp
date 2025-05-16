@@ -1,14 +1,36 @@
-.header-container_column {
+.header-container_row {
     padding-bottom: 1rem;
     padding-top: 1rem;
 }
 
-.hero {
-    align-items: center;
-    background-color: #f3f3f7;
+.header-container_icons {
     display: flex;
-    height: 50rem;
-    justify-content: center;
+    gap: 0.5rem;
+    justify-content: space-around;
+}
+
+.footer-container {
+    background-color: #fa9a41;
+    color: #fff;
+    text-align: center;
+}
+
+.hero {
+    background-color: #f3f3f7;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.hero_row {
+    align-items: center;
+    display: flex;
+}
+
+.hero_column_img {
+    border-radius: 0.5rem;
+    height: 40rem;
+    margin-top: 5px;
+    width: 40rem;
 }
 
 .books {
@@ -20,11 +42,33 @@
     margin-top: 2rem;
 }
 
-.books_item_btn--orange {
+.books_item_btn--orange,
+.hero_colum_btn--orange {
     background-color: #fa9a41;
     border: none;
 }
 
 .books_item_img {
     height: 25rem;
+}
+
+.card-metada-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card-metadata {
+    display: flex;
+    gap: 5px;
+}
+
+.card_actions {
+    display: flex;
+    gap: 2rem;
+}
+
+.card_actions > button {
+    width: 50%;
 }
