@@ -141,4 +141,27 @@ const books = [
   },
 ];
 
-export { books };
+const landingCover = [
+  {
+    id: "img0",
+    url: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/44d9129b-33c6-421b-ac9a-3dd0c186306f/djfjm3q-0cd9474e-a524-4b7f-92ac-c6adf96629d7.png/v1/fit/w_393,h_498,q_70,strp/book_cover_art_by_lucentmoth92_djfjm3q-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDk4IiwicGF0aCI6IlwvZlwvNDRkOTEyOWItMzNjNi00MjFiLWFjOWEtM2RkMGMxODYzMDZmXC9kamZqbTNxLTBjZDk0NzRlLWE1MjQtNGI3Zi05MmFjLWM2YWRmOTY2MjlkNy5wbmciLCJ3aWR0aCI6Ijw9MzkzIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.6TZj-HaOuyIeii-2ZN8Pc6noTivZVeUYJ2MkQpN1YGE",
+  },
+  {
+    id: "img1",
+    url: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/44d9129b-33c6-421b-ac9a-3dd0c186306f/djfjm36-168f9990-98a2-4476-9c86-c775fd53faad.png/v1/fill/w_372,h_575,q_80,strp/book_cover_art_by_lucentmoth92_djfjm36-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTc1IiwicGF0aCI6IlwvZlwvNDRkOTEyOWItMzNjNi00MjFiLWFjOWEtM2RkMGMxODYzMDZmXC9kamZqbTM2LTE2OGY5OTkwLTk4YTItNDQ3Ni05Yzg2LWM3NzVmZDUzZmFhZC5wbmciLCJ3aWR0aCI6Ijw9MzcyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.nE-iLRaDlT_Yx4WsvfU3SOAAw4cCl3chqfLXl8irOAo",
+  },
+  {
+    id: "img2",
+    url: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6dd6a901-08aa-4f66-863a-8e67de5f3f2a/djqhgwm-90f8dcb1-c886-4e2b-b0a4-b37da58ff52b.jpg/v1/fit/w_828,h_1104,q_70,strp/book_cover_026___burning_maze___andrew_martin_by_stevencasteel_djqhgwm-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzAwMCIsInBhdGgiOiJcL2ZcLzZkZDZhOTAxLTA4YWEtNGY2Ni04NjNhLThlNjdkZTVmM2YyYVwvZGpxaGd3bS05MGY4ZGNiMS1jODg2LTRlMmItYjBhNC1iMzdkYTU4ZmY1MmIuanBnIiwid2lkdGgiOiI8PTIyNTAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.khD3xrtIS0LkWa5Zcs09Y5eMjWYxysazOadgM0UQzaE",
+  },
+  {
+    id: "img3",
+    url: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a179d6ef-1b19-4ca3-a934-29436412c76c/djgrcof-f2d78979-34a8-43c9-b355-d5a108d5211a.png/v1/fit/w_828,h_1064,q_70,strp/1984_by_george_orwell__1__by_zenart07_djgrcof-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE1MiIsInBhdGgiOiJcL2ZcL2ExNzlkNmVmLTFiMTktNGNhMy1hOTM0LTI5NDM2NDEyYzc2Y1wvZGpncmNvZi1mMmQ3ODk3OS0zNGE4LTQzYzktYjM1NS1kNWExMDhkNTIxMWEucG5nIiwid2lkdGgiOiI8PTg5NiJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.uWil55BozIJfFZEWGEhcavaW3FFmuhVli7QOuLHz_6A",
+  },
+  {
+    id: "img4",
+    url: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a179d6ef-1b19-4ca3-a934-29436412c76c/djgrcnc-5f92b262-64bf-4f9c-9384-5987a798b4d8.png/v1/fit/w_560,h_720,q_70,strp/lolita__1__by_zenart07_djgrcnc-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYTE3OWQ2ZWYtMWIxOS00Y2EzLWE5MzQtMjk0MzY0MTJjNzZjXC9kamdyY25jLTVmOTJiMjYyLTY0YmYtNGY5Yy05Mzg0LTU5ODdhNzk4YjRkOC5wbmciLCJ3aWR0aCI6Ijw9NTYwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.cZK_g58AKzqKWmEdzIot_PXVQQNKpPiu3e6yD34-zP4",
+  },
+];
+
+export { books, landingCover };

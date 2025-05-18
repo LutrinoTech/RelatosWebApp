@@ -1,3 +1,29 @@
+.landing-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+}
+
+.landing-container_row {
+    display: flex;
+    gap: 2.5rem;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.landing-container_image {
+    border: 1px solid gray;
+    height: 25rem;
+    width: 130%;
+}
+
+.landing-container_text-row {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 .header-container_row {
     padding-bottom: 1rem;
     padding-top: 1rem;
@@ -44,7 +70,8 @@
 }
 
 .books_item_btn--orange,
-.hero_colum_btn--orange {
+.hero_colum_btn--orange,
+.landing-btn--orange {
     background-color: #fa9a41;
     border: none;
 }
