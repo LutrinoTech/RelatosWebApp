@@ -1,10 +1,11 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { Outlet } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 
-const MainLayout = ({ children }) => {
+const MainLayout = () => {
   return (
     <>
       <header>
@@ -24,7 +25,9 @@ const MainLayout = ({ children }) => {
         </Container>
       </header>
 
-      <main>{children}</main>
+      <main>
+        <Outlet />
+      </main>
 
       <footer>
         <Container fluid className="footer-container">
