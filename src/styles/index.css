@@ -77,26 +77,35 @@
 }
 
 .books_item_img {
+    cursor: pointer;
     height: 25rem;
 }
 
 .card-metada-group {
     display: flex;
-    justify-content: space-between;
+    gap: 1.6rem;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
 }
 
-.card-metadata {
-    display: flex;
-    gap: 5px;
+.detail-page {
+    padding-bottom: 10rem;
+    padding-top: 11rem;
 }
 
-.card_actions {
+.detail-data-container {
+    /* border-bottom: 2px solid orange; */
+}
+
+.detail-container_image {
+    height: 50rem;
+}
+
+.datail-data {
     display: flex;
     gap: 2rem;
 }
 
-.card_actions > button {
-    width: 50%;
+.detail-data--bold {
+    font-weight: bold;
 }

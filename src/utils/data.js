@@ -1,23 +1,23 @@
 const books = [
   {
     id: "book1",
-    title: "Song of the Ancients",
-    author: "John Smith",
+    title: "Sun Furry",
+    author: "Jessica Flint",
     price: 19.99,
     likes: 245,
     pages: 320,
     image:
-      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1ce3cec-37da-403b-a495-afa75a7728b0/dhfhb85-d29589db-0dc1-4905-b097-b48e70629b6e.jpg/v1/fit/w_800,h_1200,q_70,strp/fantasy_book_cover_design___song_of_the_ancients_by_lachrome_dhfhb85-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMCIsInBhdGgiOiJcL2ZcL2QxY2UzY2VjLTM3ZGEtNDAzYi1hNDk1LWFmYTc1YTc3MjhiMFwvZGhmaGI4NS1kMjk1ODlkYi0wZGMxLTQ5MDUtYjA5Ny1iNDhlNzA2MjliNmUuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.BWGstD3hSbtMdnvLWRlqjS9a3Zq2eIyQiCBYvnbdbTU",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6dd6a901-08aa-4f66-863a-8e67de5f3f2a/djprq8q-ce16d707-4a6d-4d11-9ca6-80859d1e9e2b.jpg/v1/fit/w_828,h_1104,q_70,strp/book_cover_020___sun_fury___jessica_flint_by_stevencasteel_djprq8q-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzAwMCIsInBhdGgiOiJcL2ZcLzZkZDZhOTAxLTA4YWEtNGY2Ni04NjNhLThlNjdkZTVmM2YyYVwvZGpwcnE4cS1jZTE2ZDcwNy00YTZkLTRkMTEtOWNhNi04MDg1OWQxZTllMmIuanBnIiwid2lkdGgiOiI8PTIyNTAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.nEgNowbZ3Po3Dqs2jWzfQFFQhgPVlOqdP2kt-5dkmas",
   },
   {
     id: "book2",
-    title: "Whispers of the Skyborn",
-    author: "Sarah Williams",
+    title: "Lolita",
+    author: "Vladimir Naboov",
     price: 24.99,
     likes: 189,
     pages: 280,
     image:
-      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1ce3cec-37da-403b-a495-afa75a7728b0/dhfwbll-1639f75b-2719-47b3-9a99-241e6a221b77.jpg/v1/fit/w_828,h_1242,q_70,strp/fantasy_book_cover_design__whispers_of_the_skyborn_by_lachrome_dhfwbll-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgwMCIsInBhdGgiOiJcL2ZcL2QxY2UzY2VjLTM3ZGEtNDAzYi1hNDk1LWFmYTc1YTc3MjhiMFwvZGhmd2JsbC0xNjM5Zjc1Yi0yNzE5LTQ3YjMtOWE5OS0yNDFlNmEyMjFiNzcuanBnIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.0R_sKlmepceYLdlV-lJ-aJMXxx7XyaQrUnZsMosB2tk",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a179d6ef-1b19-4ca3-a934-29436412c76c/djgrcnc-5f92b262-64bf-4f9c-9384-5987a798b4d8.png/v1/fit/w_560,h_720,q_70,strp/lolita__1__by_zenart07_djgrcnc-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzIwIiwicGF0aCI6IlwvZlwvYTE3OWQ2ZWYtMWIxOS00Y2EzLWE5MzQtMjk0MzY0MTJjNzZjXC9kamdyY25jLTVmOTJiMjYyLTY0YmYtNGY5Yy05Mzg0LTU5ODdhNzk4YjRkOC5wbmciLCJ3aWR0aCI6Ijw9NTYwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.cZK_g58AKzqKWmEdzIot_PXVQQNKpPiu3e6yD34-zP4",
   },
   {
     id: "book3",
@@ -138,6 +138,26 @@ const books = [
     pages: 420,
     image:
       "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1d277363-93af-45f9-b5da-e5e9df682c03/dgrhv5j-32d20e3c-019b-431b-a06e-0ccfaafb6d1b.jpg/v1/fill/w_894,h_894,q_70,strp/2022c_by_papangu999_dgrhv5j-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzFkMjc3MzYzLTkzYWYtNDVmOS1iNWRhLWU1ZTlkZjY4MmMwM1wvZGdyaHY1ai0zMmQyMGUzYy0wMTliLTQzMWItYTA2ZS0wY2NmYWFmYjZkMWIuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.-ga0BPg2SQc3C-t9ZCT7vBceWHLjgJQOz0wpoX0K7sI",
+  },
+  {
+    id: "book15",
+    title: "Song of the Ancients",
+    author: "John Smith",
+    price: 19.99,
+    likes: 245,
+    pages: 320,
+    image:
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1ce3cec-37da-403b-a495-afa75a7728b0/dhfhb85-d29589db-0dc1-4905-b097-b48e70629b6e.jpg/v1/fit/w_800,h_1200,q_70,strp/fantasy_book_cover_design___song_of_the_ancients_by_lachrome_dhfhb85-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTIwMCIsInBhdGgiOiJcL2ZcL2QxY2UzY2VjLTM3ZGEtNDAzYi1hNDk1LWFmYTc1YTc3MjhiMFwvZGhmaGI4NS1kMjk1ODlkYi0wZGMxLTQ5MDUtYjA5Ny1iNDhlNzA2MjliNmUuanBnIiwid2lkdGgiOiI8PTgwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.BWGstD3hSbtMdnvLWRlqjS9a3Zq2eIyQiCBYvnbdbTU",
+  },
+  {
+    id: "book16",
+    title: "Whispers of the Skyborn",
+    author: "Sarah Williams",
+    price: 24.99,
+    likes: 189,
+    pages: 280,
+    image:
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d1ce3cec-37da-403b-a495-afa75a7728b0/dhfwbll-1639f75b-2719-47b3-9a99-241e6a221b77.jpg/v1/fit/w_828,h_1242,q_70,strp/fantasy_book_cover_design__whispers_of_the_skyborn_by_lachrome_dhfwbll-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTgwMCIsInBhdGgiOiJcL2ZcL2QxY2UzY2VjLTM3ZGEtNDAzYi1hNDk1LWFmYTc1YTc3MjhiMFwvZGhmd2JsbC0xNjM5Zjc1Yi0yNzE5LTQ3YjMtOWE5OS0yNDFlNmEyMjFiNzcuanBnIiwid2lkdGgiOiI8PTEyMDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.0R_sKlmepceYLdlV-lJ-aJMXxx7XyaQrUnZsMosB2tk",
   },
 ];
 
