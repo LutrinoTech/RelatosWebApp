@@ -32,7 +32,7 @@ const HomePage = () => {
             <Col xs={12} md={5} className="hero_column">
               <Image
                 className="hero_column_img"
-                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1d277363-93af-45f9-b5da-e5e9df682c03/dgtgimc-6145e7f9-9e6b-4e4e-86de-38680b201136.jpg/v1/fit/w_828,h_1358,q_70,strp/db265ca40_by_papangu999_dgtgimc-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjEwMCIsInBhdGgiOiJcL2ZcLzFkMjc3MzYzLTkzYWYtNDVmOS1iNWRhLWU1ZTlkZjY4MmMwM1wvZGd0Z2ltYy02MTQ1ZTdmOS05ZTZiLTRlNGUtODZkZS0zODY4MGIyMDExMzYuanBnIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.3mwfrfSZsSVDEFKofkAQ_3wNMa778Qpk7X13Hc3KfFc"
+                src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/6dd6a901-08aa-4f66-863a-8e67de5f3f2a/djqhgwm-90f8dcb1-c886-4e2b-b0a4-b37da58ff52b.jpg/v1/fit/w_828,h_1104,q_70,strp/book_cover_026___burning_maze___andrew_martin_by_stevencasteel_djqhgwm-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzAwMCIsInBhdGgiOiJcL2ZcLzZkZDZhOTAxLTA4YWEtNGY2Ni04NjNhLThlNjdkZTVmM2YyYVwvZGpxaGd3bS05MGY4ZGNiMS1jODg2LTRlMmItYjBhNC1iMzdkYTU4ZmY1MmIuanBnIiwid2lkdGgiOiI8PTIyNTAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.khD3xrtIS0LkWa5Zcs09Y5eMjWYxysazOadgM0UQzaE"
                 fluid
               />
             </Col>
