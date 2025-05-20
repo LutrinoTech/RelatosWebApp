@@ -1,16 +1,27 @@
+import { useState } from "react";
+import { useNavigate } from "react-router";
+import { useStore } from "../store/useStore";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import ListGroup from "react-bootstrap/ListGroup";
 import { Link, Outlet } from "react-router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import CustomCart from "../components/CustomCart";
-import { useStore } from "../store/useStore";
+import CustomCartTotal from "../components/CustomCartTotal";
 
 const MainLayout = () => {
   const cartItems = useStore((state) => state.cartItems);
+  const removeFromCart = useStore((state) => state.removeFromCart);
+  const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <>
@@ -36,9 +47,11 @@ const MainLayout = () => {
                   <CustomCart items={cartItems.length} />
 
                   <FontAwesomeIcon
+                    className="header-container_icons--cart"
                     icon={faCartShopping}
                     size="lg"
                     color="gray"
+                    onClick={handleShow}
                   />
                   <FontAwesomeIcon icon={faUser} size="lg" color="gray" />
                 </div>
@@ -47,6 +60,41 @@ const MainLayout = () => {
           </Row>
         </Container>
       </header>
+
+      <Offcanvas show={show} onHide={handleClose} placement="end">
+        <Offcanvas.Header closeButton>
+          <Offcanvas.Title>Lista de compra</Offcanvas.Title>
+        </Offcanvas.Header>
+        <Offcanvas.Body>
+          <ListGroup>
+            {cartItems.map((item) => (
+              <ListGroup.Item key={item.id} className="shop-list">
+                {item.title} - ${item.price}
+                <Button
+                  className="delete-button"
+                  variant="danger"
+                  onClick={() => removeFromCart(item.id)}
+                >
+                  Eliminar
+                </Button>
+              </ListGroup.Item>
+            ))}
+            {cartItems.length === 0 && (
+              <ListGroup.Item>La lista de compra está vacía</ListGroup.Item>
+            )}
+            {cartItems.length > 0 && <CustomCartTotal cartItems={cartItems} />}
+          </ListGroup>
+
+          {cartItems.length > 0 && (
+            <Button
+              className="checkout-button"
+              onClick={() => navigate("/checkout")}
+            >
+              Finalizar compra
+            </Button>
+          )}
+        </Offcanvas.Body>
+      </Offcanvas>
 
       <main>
         <Outlet />

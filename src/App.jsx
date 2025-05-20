@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import LandingPage from "./pages/LandingPage";
 import ListingPage from "./pages/ListingPage";
 import DetailPage from "./pages/DetailPage";
+import CheckoutPage from "./pages/CheckoutPage";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/listing" element={<ListingPage />} />
           <Route path="/detail/:id" element={<DetailPage />} />
+          <Route path="/checkout" element={<CheckoutPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
