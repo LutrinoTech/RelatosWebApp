@@ -4,8 +4,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 import { landingCover } from "../utils/data";
+import CustomLandingImage from "../components/CustomLandingImage";
 
 const LandingPage = () => {
   let navigate = useNavigate();
@@ -23,18 +23,7 @@ const LandingPage = () => {
       <Container className="landing-container">
         <Row className="landing-container_row">
           {landingCover.map((cover) => (
-            <Col
-              className="landing-container_column"
-              xs={12}
-              md={2}
-              key={cover.id}
-            >
-              <Image
-                className="landing-container_image"
-                src={cover.url}
-                rounded
-              />
-            </Col>
+            <CustomLandingImage key={cover.id} url={cover.url} />
           ))}
         </Row>
 

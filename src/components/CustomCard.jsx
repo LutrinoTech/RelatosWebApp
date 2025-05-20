@@ -9,7 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import CustomCardData from "./CustomCardData";
 
-const CustomCard = ({ book }) => {
+const CustomCard = ({ book, add }) => {
   let navigate = useNavigate();
 
   return (
@@ -29,7 +29,9 @@ const CustomCard = ({ book }) => {
             <CustomCardData icon={faThumbsUp} data={book.likes} />
             <CustomCardData icon={faBookOpen} data={book.pages} />
           </div>
-          <Button className="books_item_btn--orange">Agregar al carrito</Button>
+          <Button className="books_item_btn--orange" onClick={() => add(book)}>
+            Agregar al carrito
+          </Button>
         </Card.Body>
       </Card>
     </Col>
