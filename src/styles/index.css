@@ -36,10 +36,40 @@
     justify-content: space-around;
 }
 
+.header-container_icons--cart {
+    cursor: pointer;
+}
+
 .header-container_links {
     color: #000;
     margin-left: 2rem;
     text-decoration: none;
+}
+
+.shop-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkout-button {
+    background-color: #fa9a41;
+    border: none;
+    margin-top: 2rem;
+}
+
+.checkout-page_group {
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+}
+
+.checkout-page_image {
+    height: 10rem;
+    width: 10rem;
+}
+
+.pay-button {
+    margin-top: 2rem;
 }
 
 .footer-container {
