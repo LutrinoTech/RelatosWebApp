@@ -5,10 +5,16 @@ import Container from "react-bootstrap/Container";
 import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import { getSingleBook } from "../utils/helpers";
+import { useStore } from "../store/useStore";
 
 const DetailPage = () => {
   const { id } = useParams();
   const book = getSingleBook(id);
+  const addToCart = useStore((state) => state.addToCart);
+
+  const handleAddToCart = (book) => {
+    addToCart(book);
+  };
 
   return (
     <Container className="detail-page">
@@ -36,7 +42,12 @@ const DetailPage = () => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <Button className="books_item_btn--orange">Agregar al carrito</Button>
+          <Button
+            className="books_item_btn--orange"
+            onClick={() => handleAddToCart(book)}
+          >
+            Agregar al carrito
+          </Button>
         </Col>
 
         <Col className="detail-container">

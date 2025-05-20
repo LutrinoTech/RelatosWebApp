@@ -6,10 +6,17 @@ import Row from "react-bootstrap/Row";
 import { Link } from "react-router";
 import CustomCard from "../components/CustomCard";
 import { books } from "../utils/data";
+import { useStore } from "../store/useStore";
 
 const HomePage = () => {
+  const addToCart = useStore((state) => state.addToCart);
+
+  const handleAddToCart = (book) => {
+    addToCart(book);
+  };
+
   const newBooks = books.slice(0, 3).map((book) => {
-    return <CustomCard key={book.id} book={book} />;
+    return <CustomCard key={book.id} book={book} add={handleAddToCart} />;
   });
 
   return (

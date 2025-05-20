@@ -30,9 +30,16 @@
 }
 
 .header-container_icons {
+    align-items: center;
     display: flex;
-    gap: 0.5rem;
+    gap: 2rem;
     justify-content: space-around;
+}
+
+.header-container_links {
+    color: #000;
+    margin-left: 2rem;
+    text-decoration: none;
 }
 
 .footer-container {
