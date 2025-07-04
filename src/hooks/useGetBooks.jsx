@@ -1,22 +1,31 @@
 import { useEffect, useState } from "react";
-import { books as dataBooks } from "../utils/data";
+import { fetchBooks } from "../services/api";
 
 const useGetBooks = (initialTitle = "") => {
   const [title, setTitle] = useState(initialTitle);
-  const [books, setBooks] = useState(dataBooks);
+  const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    (function () {
-      if (!title.trim()) {
-        setBooks(dataBooks);
-      }
+    const fetchData = async () => {
+      try {
+        const fetchedBooks = await fetchBooks();
+        setBooks(fetchedBooks.books);
 
-      const searchTerm = title.toLowerCase().trim();
-      const filteredItems = dataBooks.filter((book) =>
-        book.title.toLowerCase().includes(searchTerm),
-      );
-      setBooks(filteredItems);
-    })();
+        if (!title.trim()) {
+          setBooks(fetchedBooks.books);
+        } else {
+          const searchTerm = title.toLowerCase().trim();
+          const filteredItems = fetchedBooks.books.filter((book) =>
+            book.title.toLowerCase().includes(searchTerm),
+          );
+          setBooks(filteredItems);
+        }
+      } catch (error) {
+        console.error("Error fetching books:", error);
+      }
+    };
+
+    fetchData();
   }, [title]);
 
   return { books, title, setTitle };
