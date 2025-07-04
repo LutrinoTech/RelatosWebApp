@@ -18,7 +18,7 @@ const CustomCard = ({ book, add }) => {
         <Card.Img
           className="books_item_img"
           variant="top"
-          src={book.image}
+          src={book.image || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjyma7ghZ3NnM5A58f5-B8vonB_SiDKzdgowXaUFQRb7dTh-XyUWAd1XfchvPUlwai5lE&usqp=CAU"}
           onClick={() => navigate(`/detail/${book.id}`)}
         />
         <Card.Body>
